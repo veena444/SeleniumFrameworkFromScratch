@@ -10,6 +10,7 @@
   <test thread-count="5" name="Login Test">
     <classes>
       <class name="pageTests.LoginPageTests"/>
+      <class name="pageTests.RegisterPageTests"/>
       <class name="testConfig.BaseTest"/>
     </classes>
   </test> 

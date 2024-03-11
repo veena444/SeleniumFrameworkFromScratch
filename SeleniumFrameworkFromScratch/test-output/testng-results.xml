@@ -1,32 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-11T16:10:40 IST" name="Default suite" finished-at="2024-03-11T16:11:08 IST" duration-ms="28091">
+  <suite started-at="2024-03-11T17:46:29 IST" name="Suite" finished-at="2024-03-11T17:47:28 IST" duration-ms="58599">
     <groups>
     </groups>
-    <test started-at="2024-03-11T16:10:40 IST" name="Default test" finished-at="2024-03-11T16:11:08 IST" duration-ms="28091">
-      <class name="pageTests.RegisterPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.RegisterPageTests@72cf2de5]" started-at="2024-03-11T16:10:40 IST" name="setUp" finished-at="2024-03-11T16:10:43 IST" duration-ms="2756" status="PASS">
+    <test started-at="2024-03-11T17:46:29 IST" name="Login Test" finished-at="2024-03-11T17:47:28 IST" duration-ms="58599">
+      <class name="pageTests.LoginPageTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.LoginPageTests@3b1bb3ab]" started-at="2024-03-11T17:46:29 IST" name="setUp" finished-at="2024-03-11T17:46:33 IST" duration-ms="4147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="enterNewUserDetails(java.util.HashMap)[pri:1, instance:pageTests.RegisterPageTests@72cf2de5]" started-at="2024-03-11T16:10:43 IST" name="enterNewUserDetails" description="Register a new user" data-provider="getRegisterUserData" finished-at="2024-03-11T16:11:07 IST" duration-ms="24792" status="PASS">
+        <test-method signature="ValidLoginTest()[pri:1, instance:pageTests.LoginPageTests@3b1bb3ab]" started-at="2024-03-11T17:46:33 IST" name="ValidLoginTest" description="User is able to login with valid username and password and redirected to HomePage" finished-at="2024-03-11T17:46:50 IST" duration-ms="16548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.LoginPageTests@3b1bb3ab]" started-at="2024-03-11T17:46:50 IST" name="tearDown" finished-at="2024-03-11T17:46:50 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.LoginPageTests@3b1bb3ab]" started-at="2024-03-11T17:46:50 IST" name="setUp" finished-at="2024-03-11T17:46:52 IST" duration-ms="1498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="InvalidLoginTest()[pri:2, instance:pageTests.LoginPageTests@3b1bb3ab]" started-at="2024-03-11T17:46:52 IST" name="InvalidLoginTest" description="User is not able to login" finished-at="2024-03-11T17:47:00 IST" duration-ms="8222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.LoginPageTests@3b1bb3ab]" started-at="2024-03-11T17:47:00 IST" name="tearDown" finished-at="2024-03-11T17:47:00 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageTests.LoginPageTests -->
+      <class name="pageTests.RegisterPageTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageTests.RegisterPageTests@750fe12e]" started-at="2024-03-11T17:47:00 IST" name="setUp" finished-at="2024-03-11T17:47:02 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="enterNewUserDetails(java.util.HashMap)[pri:1, instance:pageTests.RegisterPageTests@750fe12e]" started-at="2024-03-11T17:47:02 IST" name="enterNewUserDetails" description="Register a new user" data-provider="getRegisterUserData" finished-at="2024-03-11T17:47:28 IST" duration-ms="26053" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{lName=user1, fName=test, Email=test_user2143@yahoo.com, paswd=star913}]]>
+                <![CDATA[{lName=user1, fName=test, Email=test_user2243@yahoo.com, paswd=star1013}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterNewUserDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.RegisterPageTests@72cf2de5]" started-at="2024-03-11T16:11:07 IST" name="tearDown" finished-at="2024-03-11T16:11:08 IST" duration-ms="321" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.RegisterPageTests@750fe12e]" started-at="2024-03-11T17:47:28 IST" name="tearDown" finished-at="2024-03-11T17:47:28 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- pageTests.RegisterPageTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Suite -->
 </testng-results>
