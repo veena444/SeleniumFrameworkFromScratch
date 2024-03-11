@@ -8,15 +8,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import base.SetupDriver;
+import pages.AccountPage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.RegisterPage;
 
 public class BaseTest extends SetupDriver {
-	//public static Logger log;
 	
 	//PageObjects
 			public HomePage homePage;
 			public LoginPage loginPage;
+			public RegisterPage registerPage;
+			public AccountPage accountPage;
 			
 			
 			public WebDriver getDriver() {
@@ -40,6 +43,9 @@ public class BaseTest extends SetupDriver {
 				}
 				else if(key.equalsIgnoreCase("loginpage")) {
 					loginPage=new LoginPage(driver);
+				}
+				else if(key.equalsIgnoreCase("registerpage")) {
+					registerPage=new RegisterPage(driver);
 				}
 				else {
 					System.out.println("Page is not yet defined!");
