@@ -1,4 +1,5 @@
 Selenium Framework:
+
 This is a test framework used for web application automation and uses below dependencies.
 IDE - Eclipse
 TestNG - testing framework
